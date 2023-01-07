@@ -1,8 +1,11 @@
-package org.example;
+package org.example.config;
 
+import org.example.Logistics;
+import org.example.model.Sphynx;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+
 @Configuration
 @ComponentScan(basePackages = "org.example")
 public class SpringConfig {
@@ -11,9 +14,8 @@ public class SpringConfig {
         return new Logistics();
     }
 
-    @Bean
-public Sphynx sphynx() {
-    return new Sphynx();
-}
-
+    @Bean("hairless")
+    public Sphynx sphynx() {
+        return new Sphynx();
+    }
 }

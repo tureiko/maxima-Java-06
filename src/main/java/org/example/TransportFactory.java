@@ -1,8 +1,10 @@
 package org.example;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class TransportFactory {
 
     public Transport getTransport(City city, int weight, int hours) {
@@ -38,5 +40,6 @@ public class TransportFactory {
         }
         return (int) (Math.ceil(weight / 500.0) * 500);
     }
+
 
 }

@@ -6,6 +6,9 @@ public class Logistics {
         this.vehicles = vehicles;
     }
 
+    public Logistics() {
+    }
+    
     public Transport[] getVehicles() {
         return vehicles;
     }

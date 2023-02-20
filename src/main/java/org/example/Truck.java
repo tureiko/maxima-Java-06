@@ -12,14 +12,15 @@ public class Truck extends Transport{
     }
 
 
+
     @Override
     public void startRepair() {
-        System.out.println("Грузовик на ремонте");
+        if (isRepairing()) System.out.println("Грузовик на ремонте");
     }
 
     @Override
     public void finishRepair() {
-        System.out.println("Грузовик доступен");
+        if (!isRepairing()) System.out.println("Грузовик доступен");
     }
 
     @Override

@@ -7,14 +7,14 @@ public class Ship extends Transport {
 
     @Override
     float getPrice(City city) {
-        float stoimost;
-        if (city.isOnWater()) {return stoimost= (float) (getCostOfKm()* city.getDistance());} else{return 0;}
+
+        if (city.isOnWater()) {return (float) (getCostOfKm()* city.getDistance());} else{return 0;}
     }
 
 
     @Override
     public void startRepair() {
-        System.out.println("Корабль на ремонте");
+        System.out.println("Корабль не доступен");
     }
 
     @Override

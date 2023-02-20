@@ -49,7 +49,13 @@ abstract class Transport implements Repairable{
         this.costOfKm = costOfKm;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Transport{" +
+                "name='" + name + '\'' +
+                ", capacity=" + capacity +
+                ", speed=" + speed +
+                ", costOfKm=" + costOfKm +
+                '}';
+    }
 }

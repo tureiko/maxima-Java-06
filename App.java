@@ -28,11 +28,12 @@ public class App {
         Logistics logistics = context.getBean(Logistics.class);
         TransportFactory transportFactory = context.getBean(TransportFactory.class);
 
+
         logistics = new Logistics(tanker, roadTrain, kater, aircraft, trailerTruck);
         logistics.getShipping(Mosсow, 1900, 8);
 
-        /*TransportFactory factory = new TransportFactory();
-         Transport transport = factory.getTransport(Spb,190700,4);*/
+        TransportFactory factory = new TransportFactory();
+         Transport transport = factory.getTransport(Spb,190700,4);
 
 
         /*Manul murka = context.getBean(Manul.class);

@@ -36,7 +36,7 @@ public class App {
          Transport transport = factory.getTransport(Spb,190700,4);
 
 
-        /*Manul murka = context.getBean(Manul.class);
+         /*Manul murka = context.getBean(Manul.class);
        Manul murzik= context.getBean(Manul.class);
         Sphynx ramzes= context.getBean(Sphynx.class);
 

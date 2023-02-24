@@ -20,4 +20,11 @@ public class Sphynx implements Cat{
     public int getWeight() {
         return weight;
     }
+    public void init(){
+        System.out.println("Сфинкс пришел");
+    }
+
+    public void destroy(){
+        System.out.println("Сфинкс ушел");
+    }
 }

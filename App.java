@@ -13,7 +13,7 @@ public class App {
         City Spb = new City("Санкт-Петербург", 120, true, true);
         City Murmansk = new City("Мурманск", 1400, false, true);
         City Tver = new City("Тверь", 540, false, true);
-        City myCity = new City("Город", 540);
+        City myCity = new City("Город", 940);
         City Mosсow = new City("Москва", 800, true, true);
 
         Truck trailerTruck = new Truck("Грузовик с полуприцепом", 24000, 120, 150.41);
@@ -28,26 +28,30 @@ public class App {
         Logistics logistics = context.getBean(Logistics.class);
         TransportFactory transportFactory = context.getBean(TransportFactory.class);
 
-
         logistics = new Logistics(tanker, roadTrain, kater, aircraft, trailerTruck);
-        logistics.getShipping(Mosсow, 1900, 8);
-
-        TransportFactory factory = new TransportFactory();
-         Transport transport = factory.getTransport(Spb,190700,4);
+        logistics.getShipping(myCity, 1900, 1);
 
 
-         /*Manul murka = context.getBean(Manul.class);
-       Manul murzik= context.getBean(Manul.class);
-        Sphynx ramzes= context.getBean(Sphynx.class);
+        /*TransportFactory factory = new TransportFactory();
+        Transport transport = factory.getTransport(Spb, 190700, 4);
+        System.out.println(transport.getName());*/
+        System.out.println();
+
+
+      /*  Manul murka = context.getBean(Manul.class);
+        Manul murzik = context.getBean(Manul.class);
+
+        Sphynx ramzes = (Sphynx) context.getBean("hairless");
 
         System.out.println(murzik);
         System.out.println(ramzes);
-        System.out.println(murka);
-
+        System.out.println(murka);*/
+/*
         murka.setName("Мурка");
         System.out.println(murzik.getName());
         System.out.println(murka.getName());
         System.out.println(murzik==murka);*/
+
 
       /* Place place = context.getBean(Place.class);
         System.out.println(place.getCat1());

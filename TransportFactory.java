@@ -17,14 +17,11 @@ public class TransportFactory {
 
         int reqSpeed = city.getDistance() / hours;// скорость с которой должен двигаться транспорт для доставки в срок
         if (reqSpeed < 40 && city.isOnWater()) {
-            System.out.println("Ship");
             return new Ship(SHIP_NAME, roundWeight(weight), roundSpeed(reqSpeed), SHIP_PRICE);
         }
         if (reqSpeed > 120 && city.isHasAirport()) {
-            System.out.println("Plane");
             return new Plane(PLANE_NAME, roundWeight(weight), roundSpeed(reqSpeed), PLANE_PRICE);
         }
-        System.out.println("Truck");
         return new Truck(TRUCK_NAME, roundWeight(weight), roundSpeed(reqSpeed), TRUCK_PRICE);
 
     }

@@ -30,7 +30,7 @@ public class App {
 
         logistics = new Logistics(tanker, roadTrain, kater, aircraft, trailerTruck);
         logistics.getShipping(myCity, 1900, 1);
-Sphynx sphynx = context.getBean(Sphynx.class);
+
 
         /*TransportFactory factory = new TransportFactory();
         Transport transport = factory.getTransport(Spb, 190700, 4);

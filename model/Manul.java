@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySources;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 //@Scope("prototype")     // по умолчанию Bean - синглтон
 @Primary
 @PropertySource(value = "classpath:application.properties" , encoding = "UTF-8")  //src\main\resources прописать вручную

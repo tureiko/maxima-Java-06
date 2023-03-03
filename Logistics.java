@@ -40,11 +40,7 @@ public class Logistics {
                 }
             }
         }
-//        if(vehicle==null) {
-//            vehicle = transportFactory.getTransport(city, weight, time);
-//            System.out.print("Transport Factory: ");
-//        }
-//        System.out.println(vehicle.getName());
+
         return vehicle != null ? null : vehicle == null ? null : transportFactory.getTransport(city, weight, time);
 
 

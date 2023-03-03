@@ -32,10 +32,6 @@ public class App {
         logistics.getShipping(myCity, 1900, 1);
 
 
-        /*TransportFactory factory = new TransportFactory();
-        Transport transport = factory.getTransport(Spb, 190700, 4);
-        System.out.println(transport.getName());*/
-        System.out.println();
 
 
       /*  Manul murka = context.getBean(Manul.class);
